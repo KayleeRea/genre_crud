@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root to: 'genres#index'
 
   get '/genres/new', to: 'genres#new', as: 'new_genre'
@@ -8,4 +9,5 @@ Rails.application.routes.draw do
   patch '/genres/:id', to: 'genres#update'
   put '/genres/:id', to: 'genres#update'
   delete '/genres/:id', to: 'genres#destroy'
+
 end
